@@ -281,7 +281,7 @@ fn main() {
                             Err(err) => eprintln!("Failed to parse ts-response payload: {:?}", err),
                         }
                     } else {
-                        eprintln!("ts-response event did not include a payload");
+                        eprintln!("ts-response event did not include a payload ");
                     }
                 });
             }
