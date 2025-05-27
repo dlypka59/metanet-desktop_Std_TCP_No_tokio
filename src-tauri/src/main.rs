@@ -286,11 +286,11 @@ fn main() {
                 });
             }
 
-            let listener = TcpListener::bind("127.0.0.1:53321").unwrap_or_else(|e| {
-                error!("Failed to bind to 127.0.0.1:53321: {}", e);
+            let listener = TcpListener::bind("127.0.0.1:3321").unwrap_or_else(|e| {
+                error!("Failed to bind to 127.0.0.1:3321: {}", e);
                 std::process::exit(1);
             });
-            info!("Server listening on 127.0.0.1:53321");
+            info!("Server listening on 127.0.0.1:3321");
 
             let pending_requests_clone = pending_requests.clone();
             let app_handle_clone = app_handle.clone(); // Use AppHandle instead of Window
